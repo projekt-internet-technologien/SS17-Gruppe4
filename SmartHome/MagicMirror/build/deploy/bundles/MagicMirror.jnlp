@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MagicMirror.jnlp">
+  <information>
+    <title>MagicMirror</title>
+    <vendor>gruppe04</vendor>
+    <description>MagicMirror</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MagicMirror.jar" size="31554" download="eager" />
+    <jar href="libs\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="libs\commons-lang3-3.5.jar" size="479881" download="eager" />
+    <jar href="libs\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="libs\google-api-client-1.22.0.jar" size="199100" download="eager" />
+    <jar href="libs\google-api-services-calendar-v3-rev247-1.22.0.jar" size="110438" download="eager" />
+    <jar href="libs\google-http-client-1.22.0.jar" size="357024" download="eager" />
+    <jar href="libs\google-http-client-jackson2-1.22.0.jar" size="6720" download="eager" />
+    <jar href="libs\google-oauth-client-1.22.0.jar" size="61342" download="eager" />
+    <jar href="libs\google-oauth-client-java6-1.22.0.jar" size="10830" download="eager" />
+    <jar href="libs\google-oauth-client-jetty-1.22.0.jar" size="5836" download="eager" />
+    <jar href="libs\httpclient-4.5.3.jar" size="747794" download="eager" />
+    <jar href="libs\httpcore-4.4.6.jar" size="323824" download="eager" />
+    <jar href="libs\jackson-annotations-2.8.9.jar" size="55784" download="eager" />
+    <jar href="libs\jackson-core-2.8.8.jar" size="282438" download="eager" />
+    <jar href="libs\jackson-databind-2.8.9.jar" size="1242477" download="eager" />
+    <jar href="libs\javax.servlet-api-3.1.0.jar" size="95806" download="eager" />
+    <jar href="libs\jetty-6.1.26.jar" size="539912" download="eager" />
+    <jar href="libs\jetty-util-6.1.26.jar" size="177131" download="eager" />
+    <jar href="libs\json-20090211.jar" size="45944" download="eager" />
+    <jar href="libs\jsoup-1.10.3.jar" size="355356" download="eager" />
+    <jar href="libs\junit.jar" size="314932" download="eager" />
+    <jar href="libs\log4j-1.2.17.jar" size="489884" download="eager" />
+    <jar href="libs\org.hamcrest.core_1.3.0.v201303031735.jar" size="55198" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="de.uniluebeck.gruppe4.ui.FXMLBsp"  name="MagicMirror" />
+  <update check="background"/>
+</jnlp>

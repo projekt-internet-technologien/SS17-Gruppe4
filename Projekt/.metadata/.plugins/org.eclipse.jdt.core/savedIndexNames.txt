@@ -1,0 +1,21 @@
+INDEX VERSION 1.126+/home/stingmuh/Dropbox/Studium/ProjectIT/Gruppe04/Projekt/.metadata/.plugins/org.eclipse.jdt.core
+852767049.index
+1791611979.index
+157348072.index
+3701274083.index
+228763005.index
+45688866.index
+4243301042.index
+4027551684.index
+162445152.index
+2357154513.index
+2937423037.index
+3441143683.index
+31887862.index
+2188686500.index
+3381942249.index
+2848132112.index
+1121432576.index
+1804204442.index
+2461533978.index
+1811263334.index

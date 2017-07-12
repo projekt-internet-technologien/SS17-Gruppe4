@@ -1,0 +1,39 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Aufgabenstellung}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Material und Methoden}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Plattformen}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Raspberry Pi}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Arduino}{4}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Software}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Semantic Web}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}SSP}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}nCOAP}{7}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Informationsdienste}{8}{subsection.2.2.4}
+\contentsline {subsubsection}{\nonumberline iCal}{8}{section*.6}
+\contentsline {subsubsection}{\nonumberline Weather API}{8}{section*.7}
+\contentsline {subsubsection}{\nonumberline RSS}{8}{section*.8}
+\contentsline {subsection}{\numberline {2.2.5}OpenCV}{8}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Bauteile}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Leuchtdiode}{9}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Fotowiderstand}{10}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}Meilenstein I}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}LED}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}LDR Digital}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}LDR Analog}{14}{section.3.3}
+\contentsline {chapter}{\numberline {4}Meilenstein II}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}COAP2SSP}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}SSP2PI}{22}{section.4.2}
+\contentsline {chapter}{\numberline {5}Meilenstein III}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Smart Mirror}{29}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Gesichtserkennung}{31}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Informationen}{33}{subsection.5.1.2}
+\contentsline {subsubsection}{\nonumberline Nachrichten}{34}{section*.31}
+\contentsline {subsubsection}{\nonumberline Wetter}{36}{section*.33}
+\contentsline {subsubsection}{\nonumberline Kalender}{36}{section*.35}
+\contentsline {subsection}{\numberline {5.1.3}Darstellung}{36}{subsection.5.1.3}
+\contentsline {chapter}{\nonumberline List of Figures}{45}{chapter*.40}
+\contentsline {chapter}{\nonumberline Listings}{47}{chapter*.41}
+\contentsline {chapter}{\nonumberline List of Tables}{49}{chapter*.42}
+\contentsline {chapter}{\nonumberline List of Corrections}{51}{chapter*.43}

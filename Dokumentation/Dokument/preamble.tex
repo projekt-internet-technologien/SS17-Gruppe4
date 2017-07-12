@@ -1,0 +1,186 @@
+%%%%% General packages & Utilities
+
+% Allow for German "Umlaute"
+% Note that for this to work, all files containing Umlaute must be saved in the UTF-8 file format!
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hyphens]{url}
+% Tables
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
+
+\usepackage{subfigure}
+% Code
+\usepackage{listings}
+% colordefinitions
+\definecolor{lightlightgray}{rgb}{0.01,0.199,0.1}
+\definecolor{light-gray}{gray}{0.9}
+\definecolor{dark-gray}{gray}{0.45}
+
+\lstset{
+  breaklines=true,
+  basicstyle=\ttfamily,
+  backgroundcolor=\color{light-gray},
+  showstringspaces=false,
+  frame=ltrb,
+  language=Matlab,
+  tabsize=2,
+  numbers=left,
+  numberstyle=\small,
+  numbersep=8pt,
+  language=Java,
+  morekeywords={*, factorial, sum, erlang},
+  keywordstyle=\color{orange}\textbf,
+  commentstyle=\color{green}\textit,
+  stringstyle=\color{blue}
+}
+
+%\lstset{
+%numbers=left, 
+%numberstyle=\small, 
+%numbersep=8pt, 
+%frame = single, 
+%language=Java,
+%breaklines=true,
+%framexleftmargin=15pt}
+
+% Make todo notes in the thesis.
+% Simply change the status to "final" to suppress printing of the notes and their list.
+\usepackage[status=draft]{fixme}
+
+% Useful in defining custom shortcut commands
+\usepackage{xspace}
+
+% Load english and german language hyphenation and options.
+% The language put last here is selected as the main language for the document,
+% specifying keywords such as Table of Contents / Inhaltsverzeichnis, etc.
+\usepackage[ngerman, english]{babel}
+\usepackage{csquotes}
+
+
+%%%%% Style
+
+% Font type
+\usepackage{lmodern}
+
+% Line spacing
+\usepackage{setspace}
+%\singlespacing
+\onehalfspacing
+%\doublespacing
+
+
+
+%%%%% Graphics packages
+
+\usepackage{graphicx}
+
+%% add subfolder containing figures to the graphics path
+\graphicspath{{figures/}}
+
+% Subfigures
+\usepackage{caption}
+%\usepackage{subcaption}
+
+% Powerful package for programmatically producing nice vector graphics
+\usepackage{tikz}
+
+
+% Package for easily drawing electrical circuits (uses tikz)
+\usepackage[european]{circuitikz}
+
+% Package for creating plots in latex using tikz internally
+%\usepackage{pgfplots}
+%\pgfplotsset{compat=1.11}
+%\usepgfplotslibrary{units}
+
+
+\newcommand*{\quelle}{%
+  \footnotesize Quelle:
+}
+
+%%%%% Referencing, Glossary, Bibliography
+
+% Allow for cross-referencing other parts of this documents
+% -- hidelinks prevents ugly red boxes around clickable items. Alternatively, these could be styled differently.
+% -- pdfusetitle adds author and title information to meta data
+\usepackage[hidelinks, pdfusetitle]{hyperref}
+
+% Easier cross-referencing, using the \cref and \Cref commands
+\usepackage{cleveref}
+
+% Glossaries must be loaded after hyperref
+\usepackage[style = long, nolist, acronym, nonumberlist, nopostdot, toc]{glossaries}
+\newglossary{symbols}{sym}{sbl}{List of Mathematical Symbols}
+%\makenoidxglossaries
+
+% Bibliography
+\usepackage[backend=biber, style=ieee, sorting=nyt]{biblatex}
+% Change the separator between title and subtitle of a book from comma to colon
+\renewcommand{\subtitlepunct}{\addcolon\addspace}
+% Make the space between author names and actual reference in the \textcite
+% command non-breakable.
+%\renewcommand\namelabeldelim{\addnbspace}
+\addbibresource{references.bib}
+
+% Add lines to table of contents for list of figures, tables, etc. and for bibliography.
+% Alternatively (e.g. when not using a KOMA document class), this could be achieved by 
+% adding
+%     \addcontentsline{toc}{chapter}{List of Figures}
+% before \listoffigures, and similarly for the others.
+\KOMAoptions{
+  listof=totoc,
+  bibliography=totoc
+}
+
+
+
+%%%%% Maths and computer science packages
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+
+% introduce new type of theorems (uses amsthm package)
+\newtheorem{lemma}{Lemma}
+
+% Improvement of \left and \right due to 
+% http://tex.stackexchange.com/questions/2607/spacing-around-left-and-right
+\usepackage{mleftright}
+
+% Produce pseudo code sections
+% See http://tex.stackexchange.com/a/230789/64293 for a discussion of the various
+% packages available for this task.
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% Correctly display SI units
+\usepackage{siunitx}
+
+
+
+\makeatletter
+\newcommand{\addloflink}[1]{% \addloflink{<URL>}
+  \addtocontents{lof}{\begingroup\def\protect\@dotsep{10000}% Remove dots in LoF for this entry
+    \protect\contentsline{figlink}{\protect\numberline{}\url{#1}}{}{}%
+    \endgroup}% Restore dots in LoF for future entries
+}
+\newcommand{\l@figlink}{\@dottedtocline{1}{1.5em}{2.3em}}
+\makeatother
+
+
+%%%%% Abbreviations and macros
+
+% Order must be first macros then glossary, since the latter uses the former
+\input{macros}
+\loadglsentries{glossary}
+
+
+
+%%%%% Emacs-related stuff
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

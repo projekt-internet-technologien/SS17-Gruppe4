@@ -1,0 +1,4 @@
+'arduino_layout.png' - https://www.robomart.com/blog/wp-content/uploads/2015/07/Arduino_Components_layout-1024x675.png
+
+'arduino_uno.jpg' - https://www.arduino.cc/en/Main/arduinoBoardUno
+

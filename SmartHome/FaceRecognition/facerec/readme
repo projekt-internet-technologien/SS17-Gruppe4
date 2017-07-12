@@ -1,0 +1,54 @@
+Dieses Projekt ist ein Java-Wrapper für das Python Package face_recognition. Es
+kann verwendet werden, um bekannte Gesichter zu erkennen und diesen Namen zuzuordnen,
+sowie unbekannte Gesichter zu erkennen.  Die Namen der erkannten gesichter werden
+anschließend dem SSP zum Observieren zur verfügung gestellt.
+
+1. Vorbereitungen
+
+Um das Java Tool nutzen zu können müssen ein paar Vorbereitungen getroffen werden.
+Zuerst muss sichergestellt werden, dass das Python Package face_recognition installiert
+ist und verwendet werden kann. Die Installation des Packeges wird in dessen GitHub
+unter "https://github.com/ageitgey/face_recognition beschrieben" . Insbesondere
+die Installation auf einem Raspberry Pi ist dabei ein wenig aufwendiger.
+
+Eine Anleitung zum installieren findet sich unter "https://gist.github.com/ageitgey/1ac8dbe8572f3f533df6269dab35df65".
+Weiter wird auch die Bibiliothek OpenCV3
+verwendet, sodass auch diese installiert werdden muss. Auch hierfür finden sich
+zahlreiche Anleitung im Internet. Unter anderem Für den Pi unter "http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/" .
+
+Letztendlich muss die Datei facerec.py aus diesem Git in das Homeverzeichnis des
+Pi's gespeichert werden. Der Pfad unter der die Datei zu finden sein soll ist in
+der Java Klasse "FaceRec" änderbar.
+
+2. Zu erkenndende Gesichter
+
+Alle Gesichter, die mit einem Namen erkannt werden sollen, müssen sich im Ordner
+"/home"pi/faces" befinden, in Form eines JPG Bildes auf dem nur das Gesicht einer
+zu erkennenden Persin ist. Die Bilder sollten dabei nicht zu groß sein, da ansonsten
+auf Leistungsschwachen rechnern der Start sehr lange dauert. Ein Beispielbild ist
+mit "Obama.jpg" im Git gegeben.
+Dieser Pfad ist in der Datei facerec.py unter der Variablen
+"path_image_folder" anpassbar.
+
+Die Namen der Bilder werden, ohne Dateiendung, als Namen der erkannten Personen
+dem SSP übergeben.
+
+
+3. Jar erstellen
+
+Mithilfen von Maven und dem Befahl "mvn package" kann eine lauffähige Jar erzeugt
+werden.
+
+4. Benutzung
+
+Die erstellte Jar kann nun normal mithilfe von Java gestartet werden. Es sollte
+dabei sichergestellt werden, dass der SSP erreichbar ist.
+In der Konsole erscheint als Ausgabe, die an den SSP gesendeten Daten, sowie eine
+Info, falls ein neues Gesicht im Bild erkannt wurde.
+Das Starten bis Gesichter erkannt werden können, dauert bei drei Bilddateien im
+"/home"pi/faces" Ordner circa eine Minute. Je mehr Bilder in dem Ordner gefunden
+werden und je größer diese sind, desto länger dauert das Starten.
+
+Die anschließende Erkennung der Gesichter hat eine Latenz von ungefähr 1 bis 2 Sekunden,
+vom Auftachen des Gesichts vor der Kamera bis zum Senden an den SSP.
+

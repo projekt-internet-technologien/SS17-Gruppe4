@@ -1,0 +1,87 @@
+!SESSION 2017-05-17 08:34:43.765 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui 2 2 2017-05-17 08:42:10.845
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-05-17 08:42:26.173
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob
+!SESSION 2017-06-07 08:53:36.702 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui 2 2 2017-06-07 08:58:15.605
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2017-06-07 09:09:20.750 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui 2 2 2017-06-07 09:14:26.102
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2017-06-14 08:57:51.584 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/stingmuh/Dropbox/Studium/ProjectIT/Gruppe04/Projekt
+
+!ENTRY org.eclipse.ui 2 2 2017-06-14 08:59:39.998
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2017-06-14 09:03:31.810 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/stingmuh/Dropbox/Studium/ProjectIT/Gruppe04/Projekt
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-06-14 09:05:29.296
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-06-14 09:05:29.296
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.296
+!MESSAGE Software being installed: UMLGen RTSJ Generation (Experimental) 0.9.0.201511161455 (org.eclipse.umlgen.gen.rtsj.feature.feature.group 0.9.0.201511161455)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.296
+!MESSAGE Missing requirement: UMLGen Autojava Generator 0.9.0.201511161455 (org.eclipse.umlgen.gen.autojava 0.9.0.201511161455) requires 'bundle org.eclipse.core.runtime 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-06-14 09:05:29.296
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.296
+!MESSAGE From: UMLGen Autojava Generation (Experimental) 0.9.0.201511161455 (org.eclipse.umlgen.gen.autojava.feature.feature.group 0.9.0.201511161455)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.296
+!MESSAGE To: org.eclipse.umlgen.gen.autojava [0.9.0.201511161455]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-06-14 09:05:29.296
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.296
+!MESSAGE From: UMLGen RTSJ Generation (Experimental) 0.9.0.201511161455 (org.eclipse.umlgen.gen.rtsj.feature.feature.group 0.9.0.201511161455)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.296
+!MESSAGE To: org.eclipse.umlgen.gen.autojava.feature.feature.group [0.9.0.201511161455]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-06-14 09:05:29.304
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2017-06-14 09:05:29.309
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.309
+!MESSAGE Software being installed: UMLGen RTSJ Generation (Experimental) 0.9.0.201511161455 (org.eclipse.umlgen.gen.rtsj.feature.feature.group 0.9.0.201511161455)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.309
+!MESSAGE Missing requirement: UMLGen Autojava Generator 0.9.0.201511161455 (org.eclipse.umlgen.gen.autojava 0.9.0.201511161455) requires 'bundle org.eclipse.core.runtime 3.10.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-06-14 09:05:29.309
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.309
+!MESSAGE From: UMLGen Autojava Generation (Experimental) 0.9.0.201511161455 (org.eclipse.umlgen.gen.autojava.feature.feature.group 0.9.0.201511161455)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.309
+!MESSAGE To: org.eclipse.umlgen.gen.autojava [0.9.0.201511161455]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-06-14 09:05:29.309
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.309
+!MESSAGE From: UMLGen RTSJ Generation (Experimental) 0.9.0.201511161455 (org.eclipse.umlgen.gen.rtsj.feature.feature.group 0.9.0.201511161455)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-06-14 09:05:29.309
+!MESSAGE To: org.eclipse.umlgen.gen.autojava.feature.feature.group [0.9.0.201511161455]

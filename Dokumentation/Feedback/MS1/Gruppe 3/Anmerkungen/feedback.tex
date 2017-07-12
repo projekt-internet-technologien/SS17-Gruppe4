@@ -1,0 +1,96 @@
+\documentclass[
+  a4paper,               % A4-Papier
+  twoside,               % zweiseitig
+  DIV=12,                % Zwölfteilung der Seite
+  BCOR=8mm,              % 8mm Korrektur für Bindung
+  headinclude=true,      % Header hinzufügen
+  footinclude=false,     % Footer nicht hinzufügen
+  numbers=noenddot,      % keine Punkte nach Kapitelnummern
+  headheight=40pt,       % Höhe des Header-Blocks
+  9pt]{scrartcl}        % Schriftgröße
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{tabularx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amsfonts, amsmath, amsthm}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+% Weitere interessante Pakete:
+% stmaryrd, mathpazo, MnSymbol, shadethm, xy, setspace, listings, color,
+% colortbl, hyperref, fancyvrb, moreverb, tocloft, ulem
+
+% Keine Einrückung am Anfang eines Absatzes
+\setlength{\parindent}{0pt}
+
+% Header mit Titel, Gruppe, Tutor oder Tutorin, Übungsblattnummer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Feedback: Meilenstein 1 - Gruppe 3}
+% Namen der AutorInnen (alphabetisch nach Nachname durch Zeilenumbrüche
+% getrennt
+%\rhead{Michael Olbrich, 606695}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  otherkeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\begin{document}
+
+\section{Stichpunkte}
+
+\textbf{Negativ}
+\begin{itemize}
+\item Abbildungen vllt. lieber mit Fritzing darstellen oder zumindest hübscheres Bild (nur das Breadboard)
+\item Beschreibung der verwendeten Bauteilcharakteristiken wäre schön
+\item Beschreibung von Arduino, Raspberry Pi (GPIO) und den verwendeten Bibliotheken und Softwarekomponenten fehlt
+\item Gleichungen könnten nummeriert sein um im Text besser Bezug darauf zu nehmen
+\item Formatierung des Dokuments ist mit Latex ansprechender machbar
+\item Inhaltsverzeichnis wäre schön - spätestens wenn mehr Abschnitte enthalten sind
+\item Kennlinien von LED und LDR wären sinnvoll zur Veranschaulichung
+\item Beschreibung der seriellen Kommunikation wäre schön
+\item Teilweise keine Erwähnung der verwendeten Bilder im Text
+\item Das entwickelte Java Programm wird überhaupt nicht weiter beschrieben
+\end{itemize}
+
+
+\textbf{Positiv}
+\begin{itemize}
+\item Low/High-Pegel der I/O Pins ist beschrieben
+\item alle relevanten Gleichungen enthalten
+\end{itemize}
+
+\end{document}
